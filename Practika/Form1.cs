@@ -58,7 +58,7 @@ namespace Practika
             {
 
             
-                MessageBox.Show("Неправильно введено имя пользователя или пароль", "Уведомление");
+                MessageBox.Show("Неправильно введено имя пользователя или пароль", "Ошибка");
             }
             else
             {
@@ -86,18 +86,18 @@ namespace Practika
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Получение размера экрана
+            
             Screen screen = Screen.PrimaryScreen;
             int screenWidth = screen.Bounds.Width;
             int screenHeight = screen.Bounds.Height;
 
-            // Расчет координат для центрирования окна
+          
             int windowWidth = this.Width;
             int windowHeight = this.Height;
             int posX = (screenWidth - windowWidth) / 2;
             int posY = (screenHeight - windowHeight) / 2;
 
-            // Установка позиции окна
+            
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(posX, posY);
         }
