@@ -22,18 +22,17 @@ namespace Practika
 
         private void Form8_Load(object sender, EventArgs e)
         {
-            // Получение размера экрана
             Screen screen = Screen.PrimaryScreen;
             int screenWidth = screen.Bounds.Width;
             int screenHeight = screen.Bounds.Height;
 
-            // Расчет координат для центрирования окна
+
             int windowWidth = this.Width;
             int windowHeight = this.Height;
             int posX = (screenWidth - windowWidth) / 2;
             int posY = (screenHeight - windowHeight) / 2;
 
-            // Установка позиции окна
+
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(posX, posY);
 
@@ -56,8 +55,8 @@ namespace Practika
         private bool isField1Filled = false;
         private void button1_Click(object sender, EventArgs e)
         {
-            string Text = @"^[а-яА-Я"" ]{2,}$";
-            string chisla = @"^[0-40000]$";
+            string Text = @"^[а-яА-Я"" «» ]{2,}$";
+            string chisla = @"^[0-9]+$";
             string Data = @"^[0-31].+[0-12].+[0000-2023]+-[0-31].+[0-12].+[0000-2023]{2,}$";
             string input = textBox1.Text;
             string input2 = textBox2.Text;
@@ -65,7 +64,7 @@ namespace Practika
             string input4 = textBox4.Text;
             string input5 = textBox5.Text;
             string input6 = textBox6.Text;
-            
+
             if (!Regex.IsMatch(input, chisla))
             {
                 errorProvider1.SetError(textBox1, "Поле должно быть заполнено!");
@@ -74,7 +73,6 @@ namespace Practika
             else
             {
                 errorProvider1.SetError(textBox1, "");
-
 
                 if (!Regex.IsMatch(input2, Text))
                 {
@@ -117,13 +115,10 @@ namespace Practika
                                     errorProvider6.SetError(textBox6, "");
 
                                     MessageBox.Show("Путевка успешно создана", "Уведомление");
-                                    
+
                                     Close();
-
                                 }
-
                             }
-
                         }
                     }
                 }
@@ -131,7 +126,7 @@ namespace Practika
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            string chisla = @"^[0-100]{2,}$";
+            string chisla = @"^[0-9]+$";
             string input7 = textBox7.Text;
 
             if(!Regex.IsMatch(input7, chisla))

@@ -19,23 +19,20 @@ namespace Practika
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "database411DataSet21.Список_путевок". При необходимости она может быть перемещена или удалена.
-            this.список_путевокTableAdapter1.Fill(this.database411DataSet21.Список_путевок);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "database411DataSet2.Список_путевок". При необходимости она может быть перемещена или удалена.
-            this.список_путевокTableAdapter1.Fill(this.database411DataSet2.Список_путевок);
+            
+             this.список_путевокTableAdapter1.Fill(this.database411DataSet2.Список_путевок);
 
-            // Получение размера экрана
             Screen screen = Screen.PrimaryScreen;
             int screenWidth = screen.Bounds.Width;
             int screenHeight = screen.Bounds.Height;
 
-            // Расчет координат для центрирования окна
+
             int windowWidth = this.Width;
             int windowHeight = this.Height;
             int posX = (screenWidth - windowWidth) / 2;
             int posY = (screenHeight - windowHeight) / 2;
 
-            // Установка позиции окна
+
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(posX, posY);
         }

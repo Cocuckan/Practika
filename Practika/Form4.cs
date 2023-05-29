@@ -22,19 +22,17 @@ namespace Practika
             // TODO: данная строка кода позволяет загрузить данные в таблицу "database411DataSet3.Список_закахов". При необходимости она может быть перемещена или удалена.
             this.список_закаховTableAdapter1.Fill(this.database411DataSet3.Список_закахов);
 
-
-            // Получение размера экрана
             Screen screen = Screen.PrimaryScreen;
             int screenWidth = screen.Bounds.Width;
             int screenHeight = screen.Bounds.Height;
 
-            // Расчет координат для центрирования окна
+
             int windowWidth = this.Width;
             int windowHeight = this.Height;
             int posX = (screenWidth - windowWidth) / 2;
             int posY = (screenHeight - windowHeight) / 2;
 
-            // Установка позиции окна
+
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(posX, posY);
         }
