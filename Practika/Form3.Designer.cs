@@ -40,21 +40,23 @@
             this.списокПутевокBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.список_путевокTableAdapter1 = new Practika.Database411DataSet2TableAdapters.Список_путевокTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.database411DataSet21 = new Practika.Database411DataSet2();
-            this.списокПутевокBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.iDПутевкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаНачалаокончанияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.количестваМестDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.темаСменыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.списокПутевокBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.database411DataSet21 = new Practika.Database411DataSet2();
+            this.списокПутевокBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.списокПутевокBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database411DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database411DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.списокПутевокBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database411DataSet21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.списокПутевокBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database411DataSet21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.списокПутевокBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -128,7 +130,7 @@
             this.количестваМестDataGridViewTextBoxColumn,
             this.ценаDataGridViewTextBoxColumn,
             this.темаСменыDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.списокПутевокBindingSource2;
+            this.dataGridView1.DataSource = this.списокПутевокBindingSource3;
             this.dataGridView1.Location = new System.Drawing.Point(49, 169);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -136,22 +138,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(871, 232);
             this.dataGridView1.TabIndex = 3;
             // 
-            // database411DataSet21
-            // 
-            this.database411DataSet21.DataSetName = "Database411DataSet2";
-            this.database411DataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // списокПутевокBindingSource2
-            // 
-            this.списокПутевокBindingSource2.DataMember = "Список путевок";
-            this.списокПутевокBindingSource2.DataSource = this.database411DataSet21;
-            // 
             // iDПутевкиDataGridViewTextBoxColumn
             // 
             this.iDПутевкиDataGridViewTextBoxColumn.DataPropertyName = "ID Путевки";
             this.iDПутевкиDataGridViewTextBoxColumn.HeaderText = "ID Путевки";
             this.iDПутевкиDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDПутевкиDataGridViewTextBoxColumn.Name = "iDПутевкиDataGridViewTextBoxColumn";
+            this.iDПутевкиDataGridViewTextBoxColumn.Width = 125;
             // 
             // названиеDataGridViewTextBoxColumn
             // 
@@ -175,6 +168,7 @@
             this.количестваМестDataGridViewTextBoxColumn.HeaderText = "Количества мест";
             this.количестваМестDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.количестваМестDataGridViewTextBoxColumn.Name = "количестваМестDataGridViewTextBoxColumn";
+            this.количестваМестDataGridViewTextBoxColumn.Width = 125;
             // 
             // ценаDataGridViewTextBoxColumn
             // 
@@ -191,6 +185,21 @@
             this.темаСменыDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.темаСменыDataGridViewTextBoxColumn.Name = "темаСменыDataGridViewTextBoxColumn";
             this.темаСменыDataGridViewTextBoxColumn.Width = 225;
+            // 
+            // списокПутевокBindingSource2
+            // 
+            this.списокПутевокBindingSource2.DataMember = "Список путевок";
+            this.списокПутевокBindingSource2.DataSource = this.database411DataSet21;
+            // 
+            // database411DataSet21
+            // 
+            this.database411DataSet21.DataSetName = "Database411DataSet2";
+            this.database411DataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // списокПутевокBindingSource3
+            // 
+            this.списокПутевокBindingSource3.DataMember = "Список путевок";
+            this.списокПутевокBindingSource3.DataSource = this.database411DataSet2;
             // 
             // Form3
             // 
@@ -210,8 +219,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.database411DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.списокПутевокBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database411DataSet21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.списокПутевокBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database411DataSet21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.списокПутевокBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,5 +247,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn количестваМестDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ценаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn темаСменыDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource списокПутевокBindingSource3;
     }
 }

@@ -19,7 +19,6 @@ namespace Practika
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "database411DataSet2.Список_путевок". При необходимости она может быть перемещена или удалена.
             this.список_путевокTableAdapter1.Fill(this.database411DataSet2.Список_путевок);
 
 

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Practika
@@ -16,12 +10,9 @@ namespace Practika
         {
             InitializeComponent();
         }
-
         private void Form3_Load(object sender, EventArgs e)
         {
-            
              this.список_путевокTableAdapter1.Fill(this.database411DataSet2.Список_путевок);
-
             Screen screen = Screen.PrimaryScreen;
             int screenWidth = screen.Bounds.Width;
             int screenHeight = screen.Bounds.Height;
@@ -36,29 +27,24 @@ namespace Practika
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(posX, posY);
         }
-
         private void Button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Заказ успешно создан"," Уведомления");
         }
-
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             Form2 form = new Form2();
             form.Show();
             this.Hide();
         }
-
         private void Label1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 

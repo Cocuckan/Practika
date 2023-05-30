@@ -19,7 +19,6 @@ namespace Practika
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "database411DataSet3.Список_закахов". При необходимости она может быть перемещена или удалена.
             this.список_закаховTableAdapter1.Fill(this.database411DataSet3.Список_закахов);
 
             Screen screen = Screen.PrimaryScreen;

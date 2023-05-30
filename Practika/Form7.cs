@@ -43,8 +43,8 @@ namespace Practika
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string Text = @"^[а-яА-Я]{2,}$";
-            string chisla = @"^[0-40000]{2,}$";
+            string Text = @"^[а-яА-Я"" «» ]{2,}$";
+            string chisla = @"^[0-9]+$";
             string Data = @"^[0-31].+[0-12].+[0000-2023]+-[0-31].+[0-12].+[0000-2023]{2,}$";
             string input = textBox1.Text;
             string input2 = textBox2.Text;
